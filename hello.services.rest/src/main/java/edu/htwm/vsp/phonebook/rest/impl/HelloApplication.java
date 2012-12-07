@@ -11,7 +11,7 @@ import javax.ws.rs.core.Application;
  * @author std
  *
  */
-public class PhonebookApplication extends Application {
+public class HelloApplication extends Application {
 	
 	@Override
 	public Set<Class<?>> getClasses() {
