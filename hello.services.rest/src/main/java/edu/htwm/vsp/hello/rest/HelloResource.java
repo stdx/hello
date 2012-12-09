@@ -11,7 +11,7 @@ import javax.ws.rs.core.Response;
 import edu.htwm.vsp.hello.service.SayHello;
 
 @Path("hello")
-public class HelloResourceImpl  {
+public class HelloResource  {
 
 	@Context
 	private SayHello sayHello;
