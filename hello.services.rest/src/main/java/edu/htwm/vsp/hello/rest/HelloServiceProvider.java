@@ -11,7 +11,7 @@ import com.sun.jersey.spi.inject.Injectable;
 import com.sun.jersey.spi.inject.InjectableProvider;
 
 import edu.htwm.vsp.hello.service.SayHello;
-import edu.htwm.vsp.hello.service.impl.SayHelloInGerman;
+import edu.htwm.vsp.hello.service.impl.SayHelloInFrench;
 
 @Provider
 public class HelloServiceProvider implements InjectableProvider<Context, Type>, Injectable<SayHello> {
@@ -26,12 +26,12 @@ public class HelloServiceProvider implements InjectableProvider<Context, Type>, 
 
 	@Override
 	public ComponentScope getScope() {
-		return ComponentScope.PerRequest;
+		return ComponentScope.Singleton;
 	}
 
 	@Override
 	public SayHello getValue() {
-		return new SayHelloInGerman();
+		return new SayHelloInFrench();
 	}
 
 }
