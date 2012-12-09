@@ -27,9 +27,6 @@
 		werden -->
 	<packaging>pom</packaging>
 
-	<!-- Der Named des Projekts ist optional. Der Standardwert ist die artifactId -->
-	<name>Parent Project for an online telephone book</name>
-
 
 	<!-- Module definieren Kind-Projekte, die beim Build mit gebaut werden. 
 		Der Name des Moduls muss dem Verzeichnisnamen entsprechen -->
